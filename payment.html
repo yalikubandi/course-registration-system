@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Course Registration System</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#" id="logoutLink">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="payment">
+            <h2>Payment Information</h2>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <ul id="paymentCourses">
+                    <!-- Courses for payment will appear here -->
+                </ul>
+                <p>Total: $<span id="paymentTotal">0</span></p>
+            </div>
+            
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="cardName">Name on Card:</label>
+                    <input type="text" id="cardName" name="cardName" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date:</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Complete Payment</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Course Registration System</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

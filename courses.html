@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Course Registration System</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#" id="logoutLink">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="courses">
+            <h2>Available Courses</h2>
+            <div class="course-list" id="courseList">
+                <!-- Courses will be loaded dynamically -->
+            </div>
+            <div class="selected-courses">
+                <h3>Your Selected Courses</h3>
+                <ul id="selectedCourses">
+                    <!-- Selected courses will appear here -->
+                </ul>
+                <p>Total: $<span id="totalAmount">0</span></p>
+                <button id="proceedToPayment" class="btn" disabled>Proceed to Payment</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Course Registration System</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
