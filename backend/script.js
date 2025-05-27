@@ -220,7 +220,7 @@ async function handlePayment(e) {
                 cardName,
                 cardNumber,
                 expiryDate,
-                cvv,
+                cvv, 
                 amount: parseFloat(amount)
             })
         });
